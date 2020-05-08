@@ -1,4 +1,4 @@
-FROM scaleway/cli:v2.0.0-beta.2 as upstream
+FROM jawher/scw:v2.0.0-20200508 as upstream
 
 FROM alpine:3.8
 
