@@ -10,9 +10,9 @@ RUN apk add --no-cache curl \
 
 LABEL "name"="action-scw"
 LABEL "version"="2.0.0-2"
-LABEL "maintainer"="Jawher Moussa"
-LABEL "repository"="https://github.com/jawher/action-scw"
-LABEL "homepage"="https://github.com/jawher/action-scw"
+LABEL "maintainer"="Christian Koehler"
+LABEL "repository"="https://github.com/ck99io/action-scw"
+LABEL "homepage"="https://github.com/ck99io/action-scw"
 
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
