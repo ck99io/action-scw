@@ -1,4 +1,4 @@
-FROM scaleway/cli:v2.0.0 as upstream
+FROM scaleway/cli:v2.2.2 as upstream
 
 FROM alpine:3.8
 
@@ -9,7 +9,7 @@ RUN apk add --no-cache curl \
     && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
 
 LABEL "name"="action-scw"
-LABEL "version"="2.0.0-2"
+LABEL "version"="2.2.2"
 LABEL "maintainer"="Christian Koehler"
 LABEL "repository"="https://github.com/ck99io/action-scw"
 LABEL "homepage"="https://github.com/ck99io/action-scw"
