@@ -12,7 +12,7 @@ Here's an example which starts a `DEV1-S` instance in the `fr-par-1` region:
 
 ```yaml
     - name: Create a new instance
-        uses: jawher/action-scw@v2.0.0-2
+        uses: ck99io/action-scw@v2.2.2
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
@@ -28,7 +28,7 @@ Here's an example which starts a `DEV1-S` instance in the `fr-par-1` region:
         run: ...
 
       - name: Delete instance
-        uses: jawher/action-scw@v2.0.0-2
+        uses: ck99io/action-scw@v2.2.2
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
@@ -56,7 +56,7 @@ We provide defaults for the following, these may also be overridden:
 This action uses the following versioning scheme:
 
 ```
-jawher/action-scw@v{M.m.p}-{a}
+ck99io/action-scw@v{M.m.p}-{a}
 ```
 
 Where:
