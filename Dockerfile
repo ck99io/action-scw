@@ -14,6 +14,11 @@ LABEL "maintainer"="Christian Koehler"
 LABEL "repository"="https://github.com/ck99io/action-scw"
 LABEL "homepage"="https://github.com/ck99io/action-scw"
 
+RUN apk update && apk add curl git
+
+RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.19.3/bin/linux/amd64/kubectl
+RUN chmod u+x kubectl && mv kubectl /bin/kubectl
+
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 CMD [ "help" ]
