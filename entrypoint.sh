@@ -18,7 +18,7 @@ if [ -n "${SCW_REGION}" ]; then
 fi
 
 # Run and preserve output for consumption by downstream actions
-"$@" >"${GITHUB_WORKSPACE}/scw.output"
+/scw "$@" >"${GITHUB_WORKSPACE}/scw.output"
 
 # Write output to STDOUT
 cat "${GITHUB_WORKSPACE}/scw.output"
